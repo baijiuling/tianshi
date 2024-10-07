@@ -1,0 +1,65 @@
+一. 标题及简介
+标题: 念选浏览器插件 - 智能沟通助手
+功能简介: 这是一个浏览器插件版本的"念选"输入法,可以帮助用户在网页上进行智能沟通。它能识别对方的意图,提供天使/恶魔解读,并生成相应的回复选项,让用户的网络交流更加灵活多样。
+
+二. 流程图
+https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/dushu/Desktop/tianshi/image.png?version%3D1728113738861
+三. 交互逻辑说明
+3.1 正常交互逻辑
+1. 用户在任何网页的文本输入框中输入或粘贴对方的话。
+2. 点击浏览器工具栏中的"念选"插件图标。
+3. 插件弹出小窗口,显示天使和恶魔两种解读。
+4. 用户选择一种解读。
+5. 插件显示对应的积极和消极回复选项。
+6. 用户选择一个回复选项。
+7. 选中的回复自动插入到原始输入框中。
+8. 用户可以进行编辑后发送。
+
+3.2 异常交互逻辑
+1. 如果用户在未选中任何输入框的情况下点击插件图标,会提示用户先选择一个输入框。
+2. 如果用户没有输入任何内容就点击插件图标,会提示用户先输入需要回复的内容。
+3. 如果网络连接出现问题,插件会提示网络错误,并建议用户检查网络连接后重试。
+
+四. 字段说明
+字段名称
+类型
+取值范围
+功能说明
+输入文本
+字符串
+不限
+用户输入或粘贴的需要回复的文本
+解读类型
+枚举
+天使/恶魔
+用户选择的解读角度
+回复类型
+枚举
+积极/消极
+用户选择的回复态度
+回复内容
+字符串
+不限
+插件生成的回复文本
+场景类型
+枚举
+工作/朋友/家庭/恋爱/客户服务/游戏/学习/自定义
+用户选择的沟通场景
+
+特别提示: 场景类型的选择将影响插件生成的解读和回复风格,使其更符合特定场景的语言特点。
+
+UI
+日常状态
+https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/UW5gbqWygoN82ixNbrzcEUPPnqe/?fallback_source=1&height=1280&mount_node_token=BmGkdbxoXoM9wwxHPOZcrCCsn8g&mount_point=docx_image&policy=equal&width=1280
+未输入页面
+https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Vk09bCXVPo3iePxtalOcC8SbnXc/?fallback_source=1&height=1280&mount_node_token=KaKyd6BUuo0YXexauIccl3JxnNh&mount_point=docx_image&policy=equal&width=1280
+意图判断页面
+https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/O9etblx3qoM5hfxyDRvcvsPlnyu/?fallback_source=1&height=1280&mount_node_token=SXr7dQdg2oiUj1xCOufckvNgnJe&mount_point=docx_image&policy=equal&width=1280
+- 注：当点击确认按钮即可刷新；
+选择回复页面
+https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OIavbUp9iopuWixphJrc2FfFnwe/?fallback_source=1&height=1280&mount_node_token=Msv9dZ5pio2WVexDskqcIogGnmd&mount_point=docx_image&policy=equal&width=1280
+交互说明
+1. 重新输入点击确认即可刷新到意图判断页面
+2. 点击恶魔版即可下拉切换天使版回复
+3. 点击刷新即可更新回复
+4. 点击复制即可复制到对应输入框里进行回复
